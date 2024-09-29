@@ -9,7 +9,8 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](e-commerce-frontend-project-one.vercel.app
+Open [e-commerce-frontend-project-one.vercel.app
+](e-commerce-frontend-project-one.vercel.app
 ) to view it in your browser.
 
 The page will reload when you make changes.\
