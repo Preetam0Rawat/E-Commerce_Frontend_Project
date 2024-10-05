@@ -8,7 +8,7 @@ export const Category = () => {
     <>
     <div className='cat'>
       <div className='catTitle'>
-       <h1> Search by Category</h1>
+       <h1> This Feature Is yet to Be coded </h1>
       </div>
       <div className='catProducts'>
         {PRODUCTS.map((product) => (<Product data={product}/>))}

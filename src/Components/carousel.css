@@ -42,7 +42,6 @@
 border-radius: 10px;
 
 /* Add a 3D transformation */
-transform: perspective(2000px) rotateX(10deg) rotateY(10deg);
 
 /* Smooth transitions for hover effects */
 transition: transform 0.3s, box-shadow 0.3s;
