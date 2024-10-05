@@ -1,8 +1,23 @@
 .shopTitle {
-    margin-top: 100px;
+  height: 150px;
     text-align: center;
-    font-size: 40px;
-  }
+    font-size: 10px;
+    margin : 0;
+    font-size: 100px;
+    font-weight: bold;
+    padding-top: 5px;
+    background-color: #FFA177FF; 
+    color: #F5C7B8FF;
+    /* 
+    background-image: url("../../assets/bgimg.png");
+    background-size: 70%; 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: overlay; 
+    color: rgb(255, 255, 255) */
+}
   .products {
     width: 100%;
     height: auto;
@@ -13,17 +28,23 @@
   
   .product {
     border-radius: 15px;
-    width: 300px;
-    height: 350px;
-    margin: 100px;
+    width: 400px;
+    height: 500px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+
+
+
+    position: relative;
   }
   
   .product img {
-    width: 400px;
+    width: 300px;
+    height: 300px;
   }
   
   .product .description {
@@ -52,3 +73,41 @@
     cursor: pointer;
   }
 
+  /* .float-div {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(177, 18, 183);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  } */
+
+
+  .float-div {
+    width: 250px;
+    height: auto; /* Auto height to adjust to content */
+    background-color: rgba(122, 176, 50, 0.872); /* Slight transparency for a stylish effect */
+    color: rgb(246, 246, 246); /* Text color for contrast */
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translateY(-50%); /* Center horizontally and add vertical translation */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding for text */
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    font-size: 18px; /* Adjust font size for readability */
+    text-align: center; /* Center the text */
+    z-index: 10; /* Ensure it appears above other content */
+}
+
+  
+  .product:hover .float-div {
+    opacity: 1;
+    transform: translateY(0);
+  }

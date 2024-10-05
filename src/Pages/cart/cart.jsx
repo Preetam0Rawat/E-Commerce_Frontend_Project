@@ -6,14 +6,14 @@ import './cart.css'
 import { useNavigate } from 'react-router-dom'
 
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount , getQuantity} = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
-
+  
   const navigate = useNavigate();
   return (
     <div className='cart'>
         <div>
-          <b>Your Cart Items</b>
+          <h1>Total Item in Cart : {getQuantity()}</h1>
         </div>
         <div className='cartItems'>
            {PRODUCTS.map((product) => 

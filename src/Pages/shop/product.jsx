@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { ShopContext } from '../../context/shop-context';
 
 export const Product = (props) => {
-    const {id, productName, price, productImage} = props.data;
+    const {id, productName, price, productImage, description} = props.data;
     const { addToCart,  cartItems } = useContext(ShopContext);
     const cartItemAmount = cartItems[id];
 
@@ -16,6 +16,7 @@ export const Product = (props) => {
       <button className='addToCartBttn' onClick={()=>addToCart(id)}>
         Add To Cart {cartItemAmount > 0 && <div> ({cartItemAmount})</div>}
       </button>
+      <div className = 'float-div'> {description} </div>
     </div>
   )
 };
